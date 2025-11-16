@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+/*Fonts that we use in this exercise*/
+@font-face {
+  font-family: 'Lexend-Deca';
+  src: url(/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Big-Shoulders';
+  src: url(/Big_Shoulders/BigShoulders-VariableFont_opsz\,wght.ttf);
+}
+/*Fonts that we use in this exercise*/
+body{
+  font-size: 15px;
+  max-width: 1440px;
+  height: 100vh;
+}
+/*Code for positioning three cards that you see on the page*/
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  margin-left: 400px;
+}
+/*Code for left card-SEDANS.It's layout*/
+.left-side{
+  background-color: hsl(31, 77%, 52%);
+  height: 525px;
+  padding: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/*Code for sedans image*/
+.sedans-image img{
+  margin-bottom: 20px;
+}
+/*Code for left side header*/
+.left-side-header{
+  margin-bottom: 20px;
+}
+/*Code for styling SEDANS header*/
+.left-side-header-text{
+  font-size: 50px;
+  font-family: 'Big-Shoulders', sans-serif;
+  color: rgb(255, 255, 255);
+}
+/*Code for styling about SEDANS text*/
+.left-side-about-text{
+  color: rgb(255, 255, 255);
+  font-family: 'Lexend-Deca', sans-serif;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.8rem;
+}
+/*Code for styling Learn More button*/
+.left-side-link{
+  margin-top: 80px;
+  width: 155px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+/*Code for styling Learn More button*,styling text*/
+.left-side-link a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14px;
+  font-family: 'Lexend-Deca', sans-serif;
+  color: hsl(31, 77%, 52%);
+}
+/**Code for hover effect on Learn More button,the backgroudn changes to orange*/
+.left-side-link:hover{
+  background-color: hsl(31, 77%, 52%);
+  transition: 0.3s;
+  border: 2px solid rgb(255, 255, 255);
+}
+/**Code for hover effect on Learn More button,the text color changes to white*/
+.left-side-link:hover a{
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+/*Code for middle card-SUVS.It's layout*/
+.middle-card{
+  background-color: hsl(184, 100%, 22%);
+  height: 525px;
+  padding: 50px;
+}
+/*Code for suvs image*/
+.suvs-image img{
+  margin-bottom: 20px;
+}
+/*Code for middle side header*/
+.middle-header{
+  margin-bottom: 20px;
+}
+/*Code for styling SUVS header*/
+.middle-header-text{
+  font-size: 50px;
+  font-family: 'Big-Shoulders', sans-serif;
+  color: rgb(255, 255, 255);
+}
+/*Code for styling about SUVS text*/
+.middle-side-about-text{
+  color: rgb(255, 255, 255);
+  font-family: 'Lexend-Deca', sans-serif;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.8rem;
+}
+/*Code for styling Learn More button,middle card*/
+.middle-link{
+  margin-top: 80px;
+  width: 155px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+/*Code for styling Learn More button*,styling text,middle card*/
+.middle-link a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14px;
+  font-family: 'Lexend-Deca', sans-serif;
+  color: hsl(184, 100%, 22%);
+}
+/*Code for hover effect on Learn More button,the backgroudn changes to dark cyan*/
+.middle-link:hover{
+  background-color: hsl(184, 100%, 22%);
+  transition: 0.3s;
+  border: 2px solid rgb(255, 255, 255);
+}
+/**Code for hover effect on Learn More button,the text color changes to white*/
+.middle-link:hover a{
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+/*Code for right card-LUXURY.It's layout*/
+.right-side-card{
+  background-color: hsl(179, 100%, 13%);
+  height: 525px;
+  padding: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/*Code for luxury image*/
+.luxury-image img{
+  margin-bottom: 20px;
+}
+/*Code for right side header*/
+.right-side-header{
+  margin-bottom: 20px;
+}
+/*Code for styling LUXURY header*/
+.right-side-header-text{
+  font-size: 50px;
+  font-family: 'Big-Shoulders', sans-serif;
+  color: rgb(255, 255, 255);
+}
+/*Code for styling about LUXURY text*/
+.right-side-about-text{
+  color: rgb(255, 255, 255);
+  font-family: 'Lexend-Deca', sans-serif;
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.8rem;
+}
+/*Code for styling Learn More button,right card*/
+.right-side-link{
+  margin-top: 80px;
+  width: 155px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+/*Code for styling Learn More button*,styling text,right card*/
+.right-side-link a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14px;
+  font-family: 'Lexend-Deca', sans-serif;
+  color: hsl(179, 100%, 13%);
+}
+/*Code for hover effect on Learn More button,the backgroudn changes to dark cyan*/
+.right-side-link:hover{
+  background-color: hsl(179, 100%, 13%);
+  transition: 0.3s;
+  border: 2px solid rgb(255, 255, 255);
+}
+/**Code for hover effect on Learn More button,the text color changes to white*/
+.right-side-link:hover a{
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+/*Code for attribution text at the bottom of the page*/
+.attribution{
+  margin-left: 400px;
+  margin-top: 100px;
+}
